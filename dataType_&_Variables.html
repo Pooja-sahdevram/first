@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>data type and variables</title>
+    <script type="text/javascript">
+      //*********************************************variabls ****************************************************
+      /*    ******var , let 
+            1. The main difference between var and let is their scope.
+             var declarations are hoisted to the top of their containing
+              function or global scope, which means that you can access
+               the variable before it is declared.
+
+               console.log(x);  // Output: undefined
+               var x = 1;
+
+            2. let declarations, on the other hand, are not hoisted. 
+            This means that you cannot access the variable before it is declared. 
+            If you try to access a let variable before it is declared,
+             you will get a ReferenceError:
+
+             console.log(y);  // Uncaught ReferenceError: y is not defined
+             let y = 1;
+
+            3. let variable is only accessible within the block .
+            it is defined in (e.g. within curly braces {}),
+             while a var variable is accessible within the entire function it is defined in.
+
+
+             ********const*****
+             In JavaScript, const is a keyword that is used to declare a constant.
+              A constant is a value that cannot be reassigned or modified.
+            const PI = 3.14;
+
+    */
+
+      //*********************************************DATA TYPE***************************************************
+      //1.boolean data type : either true or fale
+      function BOolean() {
+        var a = parseInt(k.n1.value);
+        var b = parseInt(k.n2.value);
+        var c;
+        if (a > b) {
+          c = true;
+        } else {
+          c = false;
+        }
+        document.getElementById("diiiv").innerHTML =
+          "a is bigger than b  : " + c;
+      }
+      //2.string data type : strings are immutable
+      function STring() {
+        var a = parseInt(k.n1.value);
+        var b = parseInt(k.n2.value);
+
+        if (a > b) {
+          c = "bigger";
+        } else {
+          c = "smaller";
+        }
+        document.getElementById("diiiv").innerHTML = ` a is bigger than ${c}`;
+      }
+      //3.number: it is a numeric data type that can represent both integers and floating-point numbers.EX: let x = 42; let y = 3.14;
+
+      //4.symbol :  var name = Symbol("They are unique and immutable, that is used to create unique object keys."  );
+
+      //5.null : var name=null;
+      //6. undefine var a;
+      //7. object: consist of properties
+    </script>
+  </head>
+  <body>
+    <form name="k">
+      <table
+        align="center"
+        style="color: rgb(0, 187, 255); font-size: 20px; margin-top: 50px"
+      >
+        <tr>
+          <td>Number-1</td>
+          <td><input type="text" name="n1" /></td>
+        </tr>
+        <tr>
+          <td>Number-2</td>
+          <td><input type="text" name="n2" /></td>
+        </tr>
+
+        <tr>
+          <td colspan="2" align="center">
+            <input
+              type="button"
+              name="b1"
+              value="boolean"
+              onclick="BOolean();"
+            />
+            <input type="button" name="b3" value="String" onclick="STring();" />
+          </td>
+        </tr>
+      </table>
+      <div
+        id="diiiv"
+        style="color: rgb(25, 0, 255); font-size: 50px; text-align: center"
+      ></div>
+    </form>
+  </body>
+</html>

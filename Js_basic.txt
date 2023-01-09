@@ -1,0 +1,25 @@
+****************************************************************************************************************************************************************
+1.  JavaScript is a dynamic programming language, which means that it performs type checking at runtime rather than at compile time.
+
+In a dynamically-typed language like JavaScript, variables do not have a fixed data type, and the data type of a variable can change during the execution of the program. This means that you don't have to specify the data type of a variable when you declare it, and you can assign a value of any data type to a variable at any time.
+
+2 .Dynamic typing
+
+3 .Interpreted language
+
+4 .Functional programming
+
+5. Event-driven programming: JavaScript is well-suited for event-driven programming, which means that you can write code that responds to user actions such as clicks, scrolls, and form submissions.
+
+6.Cross-platform compatibility
+
+******comments******************************************************************************************************************************************************
+//inline
+/*multieline comment*/
+
+*****concate***********************************************************************************************************************************************************
+  var a=5;
+  var b=7;
+  console.log(a + " " +b)+
+
+******************************************************************************************************************************************************************
