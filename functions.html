@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function</title>
+  </head>
+  <body>
+    <script>
+      //stand in line (queue)
+      function queue(arr, newvalue) {
+        arr.push(newvalue);
+        arr.shift();
+        return arr;
+      }
+      var arr = [1, 2, 3, 4, 5];
+      console.log(queue(arr, 6));
+
+      //card function
+      var count = 0;
+      function cc(card) {
+        switch (card) {
+          case 2:
+          case 3:
+          case 4:
+          case 5:
+          case 6:
+            count++;
+            break;
+          case 10:
+          case "J":
+          case "K":
+          case "Q":
+          case "A":
+            count--;
+            break;
+        }
+        var hold = "hold";
+        if (count > 0) hold = "bet";
+        return count + " " + hold;
+      }
+      console.log(cc(2));
+      console.log(cc("j"));
+      console.log(cc("k"));
+    </script>
+  </body>
+</html>
